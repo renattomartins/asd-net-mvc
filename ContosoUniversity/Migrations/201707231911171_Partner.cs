@@ -11,7 +11,7 @@ namespace ContosoUniversity.Migrations
                 "dbo.Partner",
                 c => new
                     {
-                        PartnerID = c.Int(nullable: false, identity: true),
+                        PartnerID = c.Int(nullable: false),
                         Name = c.String(maxLength: 50),
                     })
                 .PrimaryKey(t => t.PartnerID);
