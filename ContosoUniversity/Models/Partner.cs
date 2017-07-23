@@ -7,11 +7,11 @@ namespace ContosoUniversity.Models
 {
     public class Partner
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Display(Name = "Number")]
         public int PartnerID { get; set; }
 
         [StringLength(50, MinimumLength = 3)]
         public string Name { get; set; }
-
-        //public virtual ICollection<Course> Courses { get; set; }
     }
 }
