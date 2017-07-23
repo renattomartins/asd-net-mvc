@@ -1,8 +1,10 @@
-# ContosoUniversity (asd-net-mvc)
+# Contoso University Project (asd-net-mvc)
 
-A simple demo with Entity Framework 6 in an ASP.NET MVC 5, using the Code First development approach. This is a simple repository for future reference.
+A simple demo with ASP.NET MVC 5 and Entity Framework 6, using the Code First development approach.
 
-It was based in [Contoso University](https://github.com/iec-asd-net/ContosoUniversity) tutorial.
+This is a simple repository for the LAB 3 of .NET Architecture discipline, at Distributed Software Architecture postgraduate and also for future reference.
+
+It was based in [Contoso University](https://github.com/iec-asd-net/ContosoUniversity) repository, which in turn is based on [Getting Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application) tutorial.
 
 ### About development environment
 
