@@ -17,10 +17,11 @@ namespace ContosoUniversity.Models
         public int Credits { get; set; }
 
         public int DepartmentID { get; set; }
+        public int PartnerID { get; set; }
 
         public virtual Department Department { get; set; }
-        public virtual Partner Partner { get; set; }
         public virtual ICollection<Enrollment> Enrollments { get; set; }
         public virtual ICollection<Instructor> Instructors { get; set; }
+        public virtual Partner Partner { get; set; }
     }
 }
