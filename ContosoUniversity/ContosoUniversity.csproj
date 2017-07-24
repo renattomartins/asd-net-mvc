@@ -166,9 +166,9 @@
     <Compile Include="Migrations\201411022351064_Inheritance.Designer.cs">
       <DependentUpon>201411022351064_Inheritance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201707231911171_Partner.cs" />
-    <Compile Include="Migrations\201707231911171_Partner.Designer.cs">
-      <DependentUpon>201707231911171_Partner.cs</DependentUpon>
+    <Compile Include="Migrations\201707240259328_PartnerAdd.cs" />
+    <Compile Include="Migrations\201707240259328_PartnerAdd.Designer.cs">
+      <DependentUpon>201707240259328_PartnerAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
@@ -242,11 +242,11 @@
     <Content Include="Views\Department\Edit.cshtml" />
     <Content Include="Views\Department\Index.cshtml" />
     <Content Include="Views\Course\UpdateCourseCredits.cshtml" />
-    <Content Include="Views\Partners\Create.cshtml" />
-    <Content Include="Views\Partners\Delete.cshtml" />
-    <Content Include="Views\Partners\Details.cshtml" />
-    <Content Include="Views\Partners\Edit.cshtml" />
-    <Content Include="Views\Partners\Index.cshtml" />
+    <Content Include="Views\Partner\Create.cshtml" />
+    <Content Include="Views\Partner\Delete.cshtml" />
+    <Content Include="Views\Partner\Details.cshtml" />
+    <Content Include="Views\Partner\Edit.cshtml" />
+    <Content Include="Views\Partner\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -277,8 +277,8 @@
     <EmbeddedResource Include="Migrations\201411022351064_Inheritance.resx">
       <DependentUpon>201411022351064_Inheritance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707231911171_Partner.resx">
-      <DependentUpon>201707231911171_Partner.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707240259328_PartnerAdd.resx">
+      <DependentUpon>201707240259328_PartnerAdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -75,33 +75,37 @@ namespace ContosoUniversity.Migrations
             departments.ForEach(s => context.Departments.AddOrUpdate(p => p.Name, s));
             context.SaveChanges();
 
+            var partner = new Partner() { PartnerID = 1, Name = "teste" };
+            context.Partners.AddOrUpdate(partner);
+            context.SaveChanges();
+
             var courses = new List<Course>
             {
-                new Course {CourseID = 1050, Title = "Chemistry",      Credits = 3,
+                new Course {CourseID = 1050, Title = "Chemistry",      Credits = 3, PartnerID = 1,
                   DepartmentID = departments.Single( s => s.Name == "Engineering").DepartmentID,
                   Instructors = new List<Instructor>() 
                 },
-                new Course {CourseID = 4022, Title = "Microeconomics", Credits = 3,
+                new Course {CourseID = 4022, Title = "Microeconomics", Credits = 3, PartnerID = 1,
                   DepartmentID = departments.Single( s => s.Name == "Economics").DepartmentID,
                   Instructors = new List<Instructor>() 
                 },
-                new Course {CourseID = 4041, Title = "Macroeconomics", Credits = 3,
+                new Course {CourseID = 4041, Title = "Macroeconomics", Credits = 3, PartnerID = 1,
                   DepartmentID = departments.Single( s => s.Name == "Economics").DepartmentID,
                   Instructors = new List<Instructor>() 
                 },
-                new Course {CourseID = 1045, Title = "Calculus",       Credits = 4,
+                new Course {CourseID = 1045, Title = "Calculus",       Credits = 4, PartnerID = 1,
                   DepartmentID = departments.Single( s => s.Name == "Mathematics").DepartmentID,
                   Instructors = new List<Instructor>() 
                 },
-                new Course {CourseID = 3141, Title = "Trigonometry",   Credits = 4,
+                new Course {CourseID = 3141, Title = "Trigonometry",   Credits = 4, PartnerID = 1,
                   DepartmentID = departments.Single( s => s.Name == "Mathematics").DepartmentID,
                   Instructors = new List<Instructor>() 
                 },
-                new Course {CourseID = 2021, Title = "Composition",    Credits = 3,
+                new Course {CourseID = 2021, Title = "Composition",    Credits = 3, PartnerID = 1,
                   DepartmentID = departments.Single( s => s.Name == "English").DepartmentID,
                   Instructors = new List<Instructor>() 
                 },
-                new Course {CourseID = 2042, Title = "Literature",     Credits = 4,
+                new Course {CourseID = 2042, Title = "Literature",     Credits = 4, PartnerID = 1,
                   DepartmentID = departments.Single( s => s.Name == "English").DepartmentID,
                   Instructors = new List<Instructor>() 
                 },
